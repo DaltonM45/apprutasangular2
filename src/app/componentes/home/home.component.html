@@ -1,0 +1,29 @@
+<div class="container mtp">
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">name</th>
+                        <th scope="col">tipo</th>
+                        <th scope="col">opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let planeta of listaPlanetas; let i = index">
+                        <th scope="row">{{i + 1}}</th>
+                        <td>{{ planeta.nombre}}</td>
+                        <td>{{ planeta.tipo}}</td>
+                        <td> <button class="btn btn-warning" (click)="mostrarDetalles(planeta)" > detalles </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="">
+    <button class="btn btn-success" (click)="login()">Solicitar Permiso</button>
+</div>

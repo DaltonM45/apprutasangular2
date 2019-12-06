@@ -1,0 +1,26 @@
+<h2>usando los observables un poco, y parametros opcionales</h2>
+
+<div>
+    <div class="grupo">
+
+        <div *ngFor="let anime of listAnime; let i = index">
+
+            <div class="card secciont" 
+            style="width: 20rem;" 
+            (click)="goAnime(anime)" 
+            [class.bg-success]="selectedAnime === anime.id">
+                <img src="{{ anime.foto}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{anime.nombre}} </h5>
+                    <p class="card-text">{{anime.descripcion}} </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">temporadas: {{anime.temporadas}} </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

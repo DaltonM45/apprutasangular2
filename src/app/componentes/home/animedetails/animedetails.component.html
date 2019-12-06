@@ -1,0 +1,27 @@
+<div class="toma">
+    <div class="card secciont" style="width: 20rem;">
+        <img src="{{ anime.foto}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{anime.nombre}} </h5>
+            <p class="card-text">{{anime.descripcion}} </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">temporadas: {{anime.temporadas}} </li>
+        </ul>
+    </div>
+
+
+    <div>
+        
+        <div>
+             <button class="btn btn-primary" (click)="goNext()">Ver siguiente</button>
+        </div>
+       <div>
+              <button class="btn btn-success" (click)="goBack()" [disabled]="permiso">ver anterior</button>
+        </div>
+        <div>
+            <button class="btn btn-warning" [routerLink]="['/contactos' , {id:anime.id}]">ir ventana principal</button>
+        </div>
+    </div>
+</div>
+

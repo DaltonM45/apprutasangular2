@@ -1,0 +1,12 @@
+.secciont{
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.grupo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}

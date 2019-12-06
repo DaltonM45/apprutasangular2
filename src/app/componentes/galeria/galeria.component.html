@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <img src="https://img.freepik.com/vector-gratis/banderin-realista-3d-bandera-republica-dominicana_97886-1667.jpg?size=338&ext=jpg"
+                alt="">
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card" style="width: 18rem;">
+        <ul class="list-group list-group-flush" *ngFor="let bd of banderas; let i = index">
+            <li class="list-group-item" [routerLink]="[bd.id]">{{bd.pais}}</li>
+        </ul>
+    </div>
+</div>
+
+<router-outlet> </router-outlet>
